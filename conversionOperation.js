@@ -31,3 +31,26 @@ console.log(typeof unique1);
     "" => False;
     "Soumya" => True
 */
+
+// *********************************** Operations ***********************************************************
+
+// To make the number Negative
+let numberVal = 12;
+let negVal = -numberVal;
+console.log(negVal);
+
+// Type of Operations
+console.log(2 + 2);
+console.log(2 - 2);
+console.log(2 * 2);
+console.log(2 ** 4); // => Power off
+console.log(2 / 2); // => Divide
+console.log(2 % 2); // => Remainder
+
+// So here is the tricky conversion
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2); // => It converts into 122 becuase starting value is String so it behaves as String for all the values
+console.log(1 + 2 + "2"); // => It converts into 32 because starting value is Number and it acts to add the numbers
+
+//Learn about Prefix and Postfix on MDN
