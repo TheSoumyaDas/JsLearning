@@ -2,10 +2,10 @@
 
 // Difffernce between === & ==
 
-console.log("2" === 2);
-console.log("2" == 2);
+console.log("2" === 2); // this check the value as well as datatype
+console.log("2" == 2); // this only check value
 
-// --------  Value:  Always write Clean Code ------------------
+// --------  Tip:  Always write Clean Code ------------------
 
 // ------------------ DataTypes Summary ----------------------
 
