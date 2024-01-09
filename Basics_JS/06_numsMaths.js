@@ -28,8 +28,8 @@ console.log(Math.round(4.6)); // this gives the round off value
 console.log(Math.round(4.4)); // this gives the round off value
 
 // same you can do with these methods
-console.log(Math.ceil(4.6)); // This gives the most probabal value like this will give 5 but when you do same with 4.4 then also it will give you 5
-console.log(Math.floor(4.6)); // This gives you the least probabl valye like this will give you 4 not 5 and when you try to do samw with 4.9 then also this will give you 5 only
+console.log(Math.ceil(4.3)); // This gives the most probabal value like this will give 5 but when you do same with 4.4 then also it will give you 5
+console.log(Math.floor(4.9)); // This gives you the least probabl valye like this will give you 4 not 5 and when you try to do samw with 4.9 then also this will give you 4 only
 
 // Math
 console.log(Math.random()); // This method gives you number between 0 to 1
@@ -37,7 +37,7 @@ console.log(Math.random() * 10 + 1); // so this does is multiply with 10 which s
 
 // But when you dont need that decimal number then you can use floor dont use round
 
-console.log(Math.floor(Math.random() * 10) + 1);
+console.log("All is well::: ", Math.floor(Math.random() * 10) + 1);
 
 // But when you need to explicit that you need min 10 not less than that, then
 const min = 10;

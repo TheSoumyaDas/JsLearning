@@ -20,5 +20,5 @@ symbol => unique indetifier for objects and functions
 
 //object
 //Null is considered as Object
-//To identify the the datatype you can use **typeof**
+//To identify the datatype you can use **typeof**
 console.log(typeof null);
