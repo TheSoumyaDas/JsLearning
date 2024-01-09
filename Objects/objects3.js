@@ -18,4 +18,4 @@ console.log(instructor);
 //     "instructor": "soumya"
 // }
 
-// usually data comes in array of object or object
+// usually data comes in array of object or object format
