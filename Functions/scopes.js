@@ -12,8 +12,8 @@ const b = 5660;
 if (true) {
   let a = 50;
   const b = 80; // (but ye bahar use nhi hona cahiye)
-  var c = 90;
-  console.log(a); // Block scope can be used inside the scope only if we tried to use outside the scope it gives error
+  var c = 90; // but var can be used anywhere!
+  console.log(a); // Block scope can be used inside the scope only! if we tried to use outside the scope it gives error
   console.log(b);
   console.log(c);
 }

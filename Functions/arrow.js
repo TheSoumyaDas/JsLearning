@@ -6,7 +6,7 @@ const user = {
   age: 22,
   welcomeMessage: function () {
     console.log(this); // but inside this targeting the inside scope values
-    return `${this.username} is ${this.age}`; // so here this will only target the scope vaules the values inside the user, outside it will access
+    return `${this.username} is ${this.age}`; // so here this will only target the scope vaules the values inside the user, outside it will not access
   },
 };
 console.log(user.welcomeMessage());
@@ -17,9 +17,9 @@ console.log(this);
 // Note::
 // using normal function
 function chai() {
-  console.log(this);
+  console.log(this); // this holds something if we use normal func // learn about this more..
   let username = "OK";
-  console.log(this.username); // so this will not work because this mostly works in objects you can't use this in using normal functions because it's global object
+  console.log(this.username); // so this will not work because this mostly works in objects you can't use this in using normal functions.
 }
 // chai();
 
@@ -27,7 +27,7 @@ function chai() {
 
 // explicit return
 const arrowFucntion = (num1, num2) => {
-  console.log(this);
+  console.log("oooo", this); // this will show empty object
   return num1 + num2;
 };
 

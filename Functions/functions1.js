@@ -72,7 +72,7 @@ function userDetail(anyObject) {
 userDetail({
   title: "react.js",
   price: 4556,
-}); // you can also pass can object in arguments
+}); // you can also pass an object in arguments
 
 // we can also pass array
 const newArray = ["soumya", "nitin", "messi"];
