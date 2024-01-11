@@ -44,4 +44,33 @@ if (Object.keys(object).length === 0) {
  *
  */
 
-// Nullish Coalescing Operator (??)
+// Nullish Coalescing Operator (??): null & undefined
+
+// why this is use? because when the data comes from the database then we don't get direct response we can get null or data! so for that we use this if it's null then we can adjust it's case if not then give response
+
+let val1;
+
+val1 = 6 ?? 8;
+console.log(val1);
+
+// second case
+let val2 = null ?? 10; // why it gives the 10 as output, because we get 10 as value so it will never assign null, if there is no option then it will assign as null
+console.log(val2);
+
+// but there is never 10 their will some function that will call some data from database.
+
+// another case
+// if there is multiple assigned then
+val1 = null ?? 56 ?? undefined ?? 30; // then the first value which is given it will take that only for here it will take 56
+console.log(val1);
+
+// This is specailly made for null and undefined only
+// If there is any error then how we can handle
+
+// Ternary operator
+// condition ? true : false   // syntax
+
+const iceTea = 120;
+iceTea >= 100
+  ? console.log(`Your cash is accepted`)
+  : console.log(`Please buy something higher than 100`);

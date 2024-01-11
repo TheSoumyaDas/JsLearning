@@ -4,7 +4,7 @@
 // two ways to exectue the code
 /**
  *  1. GLOBAL EXECUTION CONTEXT => REFER this keyword
- *  2. FUNCTION EXECTION CONTEXT
+ *  2. FUNCTION EXECUTION CONTEXT
  *  // But there is exection, which is mostly use in mongoose
  *  3. EVAL EXECTION CONTEXT
  *
