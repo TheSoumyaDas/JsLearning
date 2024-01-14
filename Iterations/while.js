@@ -31,6 +31,6 @@ do {
 let score2 = 11;
 
 do {
-  console.log(`Your score is ${score}`);
+  console.log(`Your score iddds ${score2}`);
   score2++;
 } while (score2 <= 10);
