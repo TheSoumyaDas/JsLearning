@@ -70,3 +70,4 @@ change.greetingTwo = function () {
 };
 
 console.log(change.greetingTwo());
+console.log(change);

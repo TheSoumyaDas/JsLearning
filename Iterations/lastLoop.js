@@ -1,10 +1,16 @@
 const coding = ["cpp", "js", "gatsby", "react", "next", "node"];
 
+const newArr = coding.forEach((items) => console.log(items));
+console.log(newArr);
+
 // when we store this in a variable, but forEach doesn't return anything when we try to return it will show undefined
-// const loop = coding.forEach((val) => {
-//   //   console.log(val);
-//   return val;
-// });
+let lastestLoop = [];
+const loop = coding.forEach((val) => {
+  //   console.log(val);
+  lastestLoop.push(val);
+  // return val;
+});
+console.log("3rd", lastestLoop);
 
 // so above ex will not return anything!
 
@@ -15,6 +21,7 @@ const numbs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // here we have to pass callback
 const val = numbs.filter((nums) => nums > 4);
 console.log(val);
+console.log("oldArr::", numbs);
 
 // when we start a scope we have return something
 
@@ -77,10 +84,10 @@ const allBooks = [
 const values = allBooks.filter((item) => {
   return item.genre === "sciFic";
 });
-console.log(values);
+console.log("Values => ", values);
 
 const price = allBooks.filter((item) => item.price === 2330);
-console.log(price);
+console.log("Price => ", price);
 
 const checkPublishDate = allBooks.filter(
   (item) => item.publish >= 2000 && item.genre === "History"
@@ -94,6 +101,9 @@ const allNewNums = allNumbers.map((val) => val >= 7); // now here it returns boo
 console.log("new::", allNewNums); // also map returns new array, as new we know about stack and heap
 console.log("old", allNumbers);
 
+const newArrNums = allNumbers.map((item) => item + 10);
+console.log("NewARRNUMS::: ", newArrNums);
+
 const newAllNums = [];
 allNumbers.forEach((item) => {
   let newVal = item + 5;
@@ -105,7 +115,7 @@ console.log(newAllNums);
 const chaining = allNumbers
   .map((item) => item * 10)
   .map((item) => item + 1)
-  .filter((item) => item >= 40);
+  .filter((item) => item >= 40); // filter means jo true hoga vahi pass hoga.
 
 console.log("Chaining-Result:: ", chaining);
 

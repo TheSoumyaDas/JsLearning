@@ -7,7 +7,7 @@ const myObject = {
 
 // for In
 for (const key in myObject) {
-  console.log(`${key} : ${myObject[key]}`); // myObject[key] will give you values and key will give you keys, for in mostly used for objects itration
+  console.log(`${key} : ${myObject[key]}`); // myObject[key] will give you values and key will give you keys, for in is mostly used for objects iteration
 }
 
 // can this will work in array
