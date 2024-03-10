@@ -80,4 +80,18 @@ select.forEach((h2) => {
 })
 
 // NOTE: Everytime use forEach when there is nodeList.
-// Time current on: 30:10
+
+// getElementByClassName // This always give HTMlcollection so when it comes you always use Array.from() to convert into an array
+
+docuemnt.getElementByClassName('list-item')
+// store this value in variable
+const store = docuemnt.getElementByClassName('list-item')
+
+// store below value also in variable
+const storedValue = Array.from(store) // this will give all the array methods to do operations
+
+// final input you need to do...
+storedValue.forEach((h)=> {
+    h.style.backgroundColor = "Green" // this will bg color to green of all class 'list-item'
+})
+
