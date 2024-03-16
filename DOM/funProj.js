@@ -1,0 +1,21 @@
+// 1. Create a Func which creates Div with some properties
+// 2. And create a loop to loop 5 div at a time with different colors and text.
+
+const createDiv = (titleName, data) => {
+  let doc = document.createElement("div");
+  doc.className = "divs";
+  doc.id = "unique";
+  doc.style.color = "black";
+  doc.style.fontWeight = "bold";
+  doc.style.backgroundColor = data;
+  doc.style.padding = "1rem";
+  const textNode = document.createTextNode(titleName);
+  doc.appendChild(textNode);
+  document.body.appendChild(doc);
+};
+const colors = ["red", "green", "yellow", "lightBlue", "lightGreen"];
+const text = ["Red", "Green", "Yellow", "Light Blue", "Light Green"];
+
+for (let i = 0; i < 5; i++) {
+  createDiv(text[i], colors[i]);
+}
