@@ -17,7 +17,7 @@ buttons.forEach((button) => {
       case "blue":
       // body.style.backgroundColor = e.target.id;
       // break;
-      case "black":
+      case "lightBlue":
         body.style.backgroundColor = e.target.id;
         break;
       // NOTE: we should never break the code while using loop in this situation
