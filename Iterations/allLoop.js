@@ -48,6 +48,7 @@ for (const [y, x] of map) {
 // we can also do for object
 const myObject = { game1: "Bgmi", game2: "Efootball" };
 
-// for (const [key, value] of object) {  // this will not work
+// for (const [key, value] of myObject) {
+//   // this will not work
 //   console.log(key, ":", value);
 // }

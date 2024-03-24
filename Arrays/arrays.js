@@ -44,7 +44,8 @@ console.log(person.join());
 // The main differnce between splice and slice is slice helps to slice the value and gives you the result of the sliced array
 const ice = [1, 2, 3, 45, 6];
 console.log(ice);
-console.log(ice.slice(2, 4)); // in this it will start from 2nd index and end on 3rd index
+console.log("Slice::", ice.slice(2, 4)); // in this it will start from 2nd index and end on 3rd index
+console.log("OG-Slice::", ice);
 
 // and splice removes the elements in an array and it also change the elements of the array => the remaining elements
 console.log(ice.splice(2, 4)); // splice change the original array , so when we splice the value then it removes the splice part in the original array : for ex

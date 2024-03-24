@@ -49,5 +49,5 @@ function lovely(a) {
 
 console.log(holdingFunc(8)); // so when we hold the function in an variable, then  the execution will not happen before the initilization
 const holdingFunc = function (value) {
-  return value + 1; // so this will not woek
+  return value + 1; // so this will not work
 };

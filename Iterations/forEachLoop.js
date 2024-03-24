@@ -38,6 +38,6 @@ const myNewObject = [
 ];
 
 myNewObject.forEach((item) => {
-  console.log(item.fileName);
+  console.log(item.languageName);
 });
 // Here item means every object in the array, so we can have access of it
