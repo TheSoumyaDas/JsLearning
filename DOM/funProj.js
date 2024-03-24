@@ -9,8 +9,12 @@ const createDiv = (titleName, data) => {
   doc.style.fontWeight = "bold";
   doc.style.backgroundColor = data;
   doc.style.padding = "1rem";
-  const textNode = document.createTextNode(titleName);
-  doc.appendChild(textNode);
+  // 1st way to do this
+  // const textNode = document.createTextNode(titleName);
+  // doc.appendChild(textNode);
+
+  // 2nd way to do this
+  doc.appendChild(document.createTextNode(titleName));
   document.body.appendChild(doc);
 };
 const colors = ["red", "green", "yellow", "lightBlue", "lightGreen"];
