@@ -29,7 +29,7 @@ console.log(allArray.flat(Infinity));
 // so here we can use Array
 
 //asking if it's an array
-console.log(Array.isArray("soumya"));
+console.log(Array.isArray("soumya")); // this gives boolean value
 console.log(Array.from("soumya")); // this converts this into individual seperation.
 
 // But when you pass object as element
@@ -38,5 +38,6 @@ console.log(Array.from({ name: "Soumya" })); // Then this show empty array [], b
 // similarly we can use of to make new array of any elements
 const num1 = 100;
 const num2 = 200;
+x;
 const num3 = 900;
 console.log(Array.of(num1, num2, num3));
