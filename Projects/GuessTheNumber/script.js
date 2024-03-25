@@ -72,7 +72,7 @@ function displayMessage(message) {
 function endGame() {
   userInput.value = "";
   userInput.setAttribute("disabled", "");
-  p.classList.add("button"); // learn about this more
+  p.classList.add("button"); // learn about this more [https://developer.mozilla.org/en-US/docs/Web/API/Element/classList]
   p.innerHTML = `<h2 id="newGame"> Start New Game </h2>`;
   startOver.appendChild(p);
   playGame = false;
@@ -89,7 +89,7 @@ function newGame() {
     guessSlot.innerHTML = "";
     remaining.innerHTML = `${11 - numGuess}`;
     userInput.removeAttribute("disabled");
-    startOver.removeChild(p); // learn about this
+    startOver.removeChild(p); // learn about this [https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild]
     playGame = "true";
   });
 }
