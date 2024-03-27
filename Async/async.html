@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <h1>ASYNC</h1>
+    <button id="stop">STOP</button>
+  </body>
+  <script>
+    // setTimeout mean, give me a amount of time, then i will execute it one time
+    // 1st way to do this
+    setTimeout(function () {
+      console.log("Soumya");
+    }, 2000);
+
+    //2nd way
+    const sayName = function () {
+      console.log("ä, Hola");
+    };
+
+    setTimeout(sayName, 3000); // here you've to give refernce do not execute
+    // 1. handler: A function without name => function() {}
+    // 2. timeout: Number of secs it will be in milliseconds
+    // setInterval mean, give me a amount of time that i will execute it again and again
+
+    // another secnario
+    const changeText = function () {
+      document.querySelector("h1").innerHTML = "Welcome to Seb's";
+    };
+
+    setTimeout(changeText, 5000);
+  </script>
+</html>
