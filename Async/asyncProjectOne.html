@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async 1</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <h1>ASYNC Project 1....</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+  </body>
+  <script>
+    const start = document.querySelector("#start");
+    const stopp = document.querySelector("#stop");
+
+    let intervalId;
+    const startButton = () => {
+      const started = () => {
+        console.log("You have Clicked Start Button", Date.now());
+      };
+      intervalId = setInterval(started, 1000);
+    };
+
+    const stopedButton = () => {
+      clearInterval(intervalId);
+    };
+
+    start.addEventListener("click", startButton);
+    stopp.addEventListener("click", stopedButton);
+  </script>
+</html>
+
+<!-- You can also write in this manner tooo
+    // start.addEventListener("click", (e) => {
+    //   function start() {
+    //     console.log("You have Clicked Start Button", Date.now());
+    //   }
+    //   const stopThis = setInterval(start, 1000);
+    //   stopp.addEventListener("click", (e) => {
+    //     clearInterval(stopThis);
+    //   });
+    // });
+-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Async JavaScript Intervals</title>
+  </head>
+  <body>
+    <h1>Async project</h1>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+      document.querySelector("#start").addEventListener("click", function () {
+        const start = function () {
+          console.log("Rushi", Date.now());
+        };
+        const toStop = setInterval(start, 1000, (click = start));
+
+        document.querySelector("#stop").addEventListener("click", function () {
+          clearInterval(toStop);
+        });
+      });
+    </script>
+  </body>
+</html> -->
