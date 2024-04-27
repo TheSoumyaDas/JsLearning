@@ -8,10 +8,10 @@ const body = document.querySelector("body");
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     switch (e.target.id) {
-      case "red":
+      case "purple":
       // body.style.backgroundColor = e.target.id;
       // break;
-      case "green":
+      case "lightgreen":
       // body.style.backgroundColor = e.target.id;
       // break;
       case "blue":
