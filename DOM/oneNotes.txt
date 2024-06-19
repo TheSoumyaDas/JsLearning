@@ -46,8 +46,8 @@ title.textContent [will show all the text content, that are also hidden by some 
 // Query Selector
 
 document.querySelector('h2') // This will only give the first h2 content!
-docuemnt.querySelector('#title') // this will give us id
-docuemnt.querySelector('.heading') // this will give us class
+docuemnt.querySelector('#title') // this will give us id title
+docuemnt.querySelector('.heading') // this will give us class heading
 
 note: we can give any selector for accessing the content
 // we can do like this too

@@ -10,8 +10,8 @@ document.getElementById("owl").onclick = () => {
 // For this you should always use eventListensers as this will give you propogation and information
 // AddEventListener gives us more functionality to handle the events such as drag-and-drop, mouse click, keyboard click etc
 // 1: Always write events name in string : 'click', 'submit'
-// 2: Second parameters will be a function : () => {} || fucnction() {} ; we also pass e as parameter, e stands for Events
-// 3: Thrid parameter will be Either TRUE or FALSE, Default is false
+// 2: Second parameters will be a function : () => {} || function() {} ; we also pass e as parameter, e stands for Events
+// 3: Third parameter will be Either TRUE or FALSE, Default is false
 document.querySelector("#river").addEventListener(
   "click",
   (e) => {
@@ -121,3 +121,17 @@ document.querySelector("#images").addEventListener(
   },
   false
 );
+
+/**
+ * Event Bubbling and Capturing:
+ * 
+ * Capturing Phase:
+   #outer (outermost element)
+   #middle
+   #inner (target element)
+  Bubbling Phase:
+   #inner (target element)
+   #middle
+   #outer (outermost element)
+ * 
+ */
