@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Async 1</title>
+    <title>Async Project 1</title>
   </head>
   <body style="background-color: black; color: white">
     <h1>ASYNC Project 1....</h1>
@@ -11,23 +11,41 @@
     <button id="stop">STOP</button>
   </body>
   <script>
-    const start = document.querySelector("#start");
-    const stopp = document.querySelector("#stop");
+    // const start = document.querySelector("#start");
+    // const stopp = document.querySelector("#stop");
 
-    let intervalId;
-    const startButton = () => {
-      const started = () => {
-        console.log("You have Clicked Start Button", Date.now());
+    // let intervalId;
+    // const startButton = () => {
+    //   const started = () => {
+    //     console.log("You have Clicked Start Button", Date.now());
+    //   };
+    //   intervalId = setInterval(started, 1000);
+    // };
+
+    // const stopedButton = () => {
+    //   clearInterval(intervalId);
+    // };
+
+    // start.addEventListener("click", startButton);
+    // stopp.addEventListener("click", stopedButton);
+
+    // practice
+
+    const startBtn = document.querySelector("#start");
+    const stopBtn = document.querySelector("#stop");
+    let stopIntervalButton;
+    startBtn.addEventListener("click", () => {
+      const setIntervalFunc = () => {
+        console.log(`Clicked Start, now let's go....`, Date.now());
       };
-      intervalId = setInterval(started, 1000);
-    };
 
-    const stopedButton = () => {
-      clearInterval(intervalId);
-    };
+      stopIntervalButton = setInterval(setIntervalFunc, 1000); // NOTE: Always, if you want to clearTimeout you should always clear the setInterval variable.
+    });
 
-    start.addEventListener("click", startButton);
-    stopp.addEventListener("click", stopedButton);
+    stopBtn.addEventListener("click", () => {
+      console.log(`Clicked stop button :`);
+      clearInterval(stopIntervalButton); // Note: This doesn't take any Time to stop, just pass the handler name.
+    });
   </script>
 </html>
 
@@ -42,29 +60,3 @@
     //   });
     // });
 -->
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Async JavaScript Intervals</title>
-  </head>
-  <body>
-    <h1>Async project</h1>
-
-    <button id="start">Start</button>
-    <button id="stop">Stop</button>
-
-    <script>
-      document.querySelector("#start").addEventListener("click", function () {
-        const start = function () {
-          console.log("Rushi", Date.now());
-        };
-        const toStop = setInterval(start, 1000, (click = start));
-
-        document.querySelector("#stop").addEventListener("click", function () {
-          clearInterval(toStop);
-        });
-      });
-    </script>
-  </body>
-</html> -->

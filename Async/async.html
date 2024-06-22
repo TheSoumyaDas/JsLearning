@@ -28,9 +28,17 @@
 
     // another secnario
     const changeText = function () {
-      document.querySelector("h1").innerHTML = "Welcome to Seb's";
+      document.querySelector("h1").textContent = "Welcome to Seb's";
     };
 
-    setTimeout(changeText, 5000);
+    const changeMe = setTimeout(changeText, 5000);
+
+    // There is another method called clearTimeout
+    document.querySelector("#stop").addEventListener("click", () => {
+      clearTimeout(changeMe); // You're clearing the setTimeout not ChangeText( where textContent is been changed)
+      console.log("Stopped");
+    });
+
+    // Note: setTimeout takes two parameters => 1. A Handler(bascially a unnamed Function) and Time
   </script>
 </html>
