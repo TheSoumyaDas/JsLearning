@@ -70,3 +70,55 @@ promise
     // to handle error gracefully, whenever you call promise always write catch.
     console.log(err.message);
   });
+
+// Fetch understanding
+
+const newUser = {
+  userName: "Sammy",
+  age: 34,
+};
+
+fetch("https://fakestoreapi.com/carts?limit=5", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(newUser),
+})
+  .then((res) => {
+    if (!res.ok) {
+      console.log("Something went wrong");
+      return;
+    }
+    return res.json();
+  })
+  .then((data) => {
+    // console.log("Data:>", JSON.stringify(data[0].products[1])); // This is used to get the data
+    console.log("Success True"); // This is used for creation of data
+  })
+  .catch((Error) => console.log(Error));
+
+// Project
+
+const btn = document.querySelector("button");
+const contain = document.querySelector("#container");
+
+const clickEvent = async () => {
+  try {
+    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await res.json();
+    if (!res.ok) {
+      console.log("Problem"); // Here we have put the condition, because we want to parse the data into json format, so we can get the message data too, but there is no need to do this.
+    }
+    // console.log("Da:>", data[0].username);
+    data.forEach((el) => {
+      return contain.append(JSON.stringify(el.username));
+    });
+
+    return data;
+  } catch (error) {
+    console.log("Error", error);
+  }
+};
+
+btn.addEventListener("click", clickEvent);
