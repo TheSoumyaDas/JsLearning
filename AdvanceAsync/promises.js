@@ -9,12 +9,12 @@
  */
 
 // Creation of Promise
-// 1. Promise takes 2 parameter  >> a. CallBack
+// 1. Promise takes 2 parameter  >> a. CallBack b. An Object which takes extra methods
 
 const promiseOne = new Promise(function (resolve, reject) {
   // This callback takes two param => 1.resolve 2.reject
-  //Do an async task
-  //DB calls, cryptography, network
+  // Do an async task
+  // DB calls, cryptography, network
 
   setTimeout(function () {
     console.log("Async Task is Completed..");
